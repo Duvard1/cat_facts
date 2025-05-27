@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Fact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐱 Cat Fact of the Moment</h1>
+    <p id="fact">Loading...</p>
+    <button id="refreshBtn">Get Another Fact</button>
+  </div>
+
+  <script>
+    const factElement = document.getElementById('fact');
+    const refreshBtn = document.getElementById('refreshBtn');
+
+    function fetchFact() {
+      fetch('/fact')
+        .then(response => response.json())
+        .then(data => {
+          factElement.textContent = data.fact;
+        })
+        .catch(() => {
+          factElement.textContent = 'Failed to load fact. Try again!';
+        });
+    }
+
+    refreshBtn.addEventListener('click', fetchFact);
+
+    // Initial load
+    fetchFact();
+  </script>
+</body>
+</html>
