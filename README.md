@@ -8,11 +8,6 @@ Este es un proyecto web que consume una API pública para mostrar datos curiosos
 
 ---
 
-## 📸 Vista del Proyecto
-
-![Estructura del Proyecto](./ruta/a/la/imagen/259232fa-8b67-426a-92d3-37472cf3e6f5.png)
-
----
 
 ## 🚀 Tecnologías Usadas
 
@@ -35,23 +30,7 @@ Este es un proyecto web que consume una API pública para mostrar datos curiosos
 
 ## 🔍 Estructura del Proyecto
 
-CAT_FACTS/
-│
-├── Backend/ # API REST en Flask
-│ ├── app.py
-│ ├── Dockerfile
-│ ├── requirements.txt
-│
-├── Frontend/ # Servidor Node.js + UI
-│ ├── server.js
-│ ├── index.html
-│ ├── style.css
-│ ├── Dockerfile
-│
-├── docker-compose.yml # Orquestación de servicios
-├── .github/workflows/ # CI/CD
-│ └── deploy.yml
-└── README.md # Este archivo
+![alt text](image.png)
 
 
 ---
